@@ -20,3 +20,45 @@ function setBalance(value) {
     const balanceElement = document.getElementById('balance');
     balanceElement.innerText = value;
 }
+
+
+// bujlam nah
+
+// machine id >> hide all >> show id
+
+// function showOnly(id){    
+//     const addmoney= document.getElementById('addmoney');
+//     const cashout= document.getElementById('Cashout');
+
+//     // console.log(`add Money- ${addmoney}, cashout - ${cashout}`);
+
+//     //shobai k hide kore deow
+// addmoney.classList.add('hidden');
+// cashout.classList.add('hidden');
+//     // id wala element ta ke tmi show kora
+
+//     const seleted = document.getElementById(id);
+//     seleted.classList.remove('hidden');
+// }
+ 
+
+
+
+
+
+
+function showOnly(id){
+const addMoney = document.getElementById('addmoney');
+const cashOut = document.getElementById('Cashout');
+const history = document.getElementById('history')
+
+addMoney.classList.add('hidden');
+cashOut.classList.add('hidden');
+history.classList.add('hidden')
+
+const select = document.getElementById(id);
+select.classList.remove('hidden');
+
+
+}
+

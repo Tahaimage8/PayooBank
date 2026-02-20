@@ -30,6 +30,26 @@ const pin = getValueFromInput('cashout-pin');
 if(pin === '1234'){
     alert('Cashout is successful');
     currentBalance.innerText = newBalance.toFixed(2) ;
+    
+
+
+    // history container niya asbo
+     const history = document.getElementById('history-container');
+     
+     // new div create korbo
+     const newHistory = document.createElement("div");
+
+     // new div innerHtml add korbo
+    newHistory.innerHTML = `
+    <div class="transaction-card p-5 bg-base-100">
+
+    CashOut Successful CashOut ${cashoutAmount} from ${cashoutNumber} at ${new Date()}
+  </div>
+    `
+
+
+     // history container e newDiv append korbo
+history.append(newHistory);
 }
 else{
     alert('invalid Pin');

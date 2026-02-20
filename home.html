@@ -59,19 +59,19 @@
 
 
 <div class="buttons grid grid-cols-3 gap-3">
-<button class="btn flex-col h-full py-4 rounded-2xl">
+<button onclick="showOnly('addmoney')" class="btn flex-col h-full py-4 rounded-2xl">
     <img src="assets/opt-1.png">
     <p>Add Money</p>
 </button>
 
 
-<button class="btn flex-col h-full py-4 rounded-2xl">
+<button onclick="showOnly('Cashout')" class="btn flex-col h-full py-4 rounded-2xl">
     <img src="assets/opt-2.png">
     <p>Cashout</p>
 </button>
 
 
-<button class="btn flex-col h-full py-4 rounded-2xl">
+<button  class="btn flex-col h-full py-4 rounded-2xl">
     <img src="assets/opt-3.png">
     <p>Send Money</p>
 </button>
@@ -89,7 +89,7 @@
 </button>
 
 
-<button class="btn flex-col h-full py-4 rounded-2xl">
+<button onclick="showOnly('history')" class="btn flex-col h-full py-4 rounded-2xl">
     <img src="assets/opt-6.png">
     <p>Transactrions</p>
 </button>
@@ -99,7 +99,7 @@
 
 </section>
 
-<section id="addmoney" class="w-11/12 mx-auto py-5" >
+<section id="addmoney" class="w-11/12 mx-auto py-5 hidden" >
 <h2 class="text-2xl font-bold mb-5">Add Money</h2>
 
         <div class="card bg-base-100 w-full  shadow-2xl rounded-2xl">
@@ -107,7 +107,7 @@
         <fieldset class="fieldset">
         <label class="label text-neutral font-bold">Select To Pay</label>
         <select id="add-money-bank" class="select rounded-full w-full bg-base-200">
-        <option disabled selected>Select back</option>
+        <option disabled selected>Select bank</option>
         <option>Agrani Bank</option>
         <option>Bank Asia PLC</option>
         <option value="IBBL">BRAC Bank PLC</option>
@@ -160,6 +160,23 @@
       </div>
     </div>
 </section>
+
+
+
+<section id="history" class="w-11/12 mx-auto hidden">
+<h2 class="text-2xl font-bold mb-5">Transactions</h2>
+<div class="" id="history-container">
+  <div class="transaction-card p-5 bg-base-100">
+
+  </div>
+</div>
+</section>
+
+
+
+
+
+
 
 
 <script src="sciript/cashout.js"></script>
