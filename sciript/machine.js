@@ -50,10 +50,12 @@ function setBalance(value) {
 function showOnly(id){
 const addMoney = document.getElementById('addmoney');
 const cashOut = document.getElementById('Cashout');
-const history = document.getElementById('history')
+const transfers= document.getElementById('trasnfer');
+const history = document.getElementById('history');
 
 addMoney.classList.add('hidden');
 cashOut.classList.add('hidden');
+transfers.classList.add('hidden');
 history.classList.add('hidden')
 
 const select = document.getElementById(id);
